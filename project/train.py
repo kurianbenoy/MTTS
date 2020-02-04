@@ -688,7 +688,6 @@ if __name__ == '__main__':
     # setup output paths and read configs
     c = load_config(args.config_path)
     _ = os.path.dirname(os.path.realpath(__file__))
-
     OUT_PATH = args.continue_path
     if args.continue_path == '':
         OUT_PATH = create_experiment_folder(c.output_path, c.run_name, args.debug)
@@ -696,15 +695,15 @@ if __name__ == '__main__':
     AUDIO_PATH = os.path.join(OUT_PATH, 'test_audios')
 
     if args.rank == 0:
-        os.makedirs(AUDIO_PATH, exist_ok=True)
+        #os.makedirs(AUDIO_PATH, exist_ok=True)
         new_fields = {}
         if args.restore_path:
             new_fields["restore_path"] = args.restore_path
         new_fields["github_branch"] = get_git_branch()
         copy_config_file(args.config_path,
                          os.path.join(OUT_PATH, 'config.json'), new_fields)
-        os.chmod(AUDIO_PATH, 0o775)
-        os.chmod(OUT_PATH, 0o775)
+        #os.chmod(AUDIO_PATH, 0o775)
+        #os.chmod(OUT_PATH, 0o775)
 
     if args.rank == 0:
         LOG_DIR = OUT_PATH

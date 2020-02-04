@@ -27,10 +27,6 @@
     },
 
     // DISTRIBUTED TRAINING
-    "distributed":{
-        "backend": "nccl",
-        "url": "tcp:\/\/localhost:54321"
-    },
 
     "reinit_layers": [],    // give a list of layer names to restore from the given checkpoint. If not defined, it reloads all heuristically matching layers.
 
@@ -90,8 +86,8 @@
     "max_seq_len": 150,     // DATASET-RELATED: maximum text length
 
     // PATHS
-    "output_path": "/output/",      // DATASET-RELATED: output path for all training outputs.
-    // "output_path": "/media/erogol/data_ssd/Models/runs/",
+    "output_path": "experiment/",      // DATASET-RELATED: output path for all training outputs.
+//    "output_path": "/media/erogol/data_ssd/Models/runs/",
  
     // PHONEMES
     "phoneme_cache_path": "mozilla_us_phonemes",  // phoneme computation is slow, therefore, it caches results in the given folder.
