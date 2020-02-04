@@ -1,0 +1,7 @@
+md5: 3f8e7ad8131790d16e875cef129e6d1a
+outs:
+- md5: 4ac2851cbf9ad438581845e5594f591b
+  path: tacotron2_statedict.pt
+  cache: true
+  metric: false
+  persist: false
