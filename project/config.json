@@ -86,7 +86,7 @@
     "max_seq_len": 150,     // DATASET-RELATED: maximum text length
 
     // PATHS
-    "output_path": "experiment/",      // DATASET-RELATED: output path for all training outputs.
+    "output_path": "../",      // DATASET-RELATED: output path for all training outputs.
 //    "output_path": "/media/erogol/data_ssd/Models/runs/",
  
     // PHONEMES
