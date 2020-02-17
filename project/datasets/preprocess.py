@@ -199,3 +199,15 @@ def ml_slr(root_path, meta_file):
             text = cols[1:]
             items.append([text, wav_file, speaker_name])
     return items
+
+def fm_slr(root_path, meta_file):
+    txt_file=os.path.join(root_path, meta_file)
+    items=[]
+    speaker_name="slr_fm"
+    with open(txt_file, 'r') as ttf:
+        for line in ttf:
+            cols=line.split()
+            wav_file=os.path.join(root_path, cols[0]+'.wav')
+            text=cols[1:]
+            items.append([text, wav_file, speaker_name])
+    return items
