@@ -191,7 +191,7 @@ def libri_tts(root_path, meta_files=None):
 def ml_slr(root_path, meta_file):
     txt_file = os.path.join(root_path, meta_file)
     items = []
-    speaker_name = "slr_ml"
+    speaker_name = "ml_slr"
     with open(txt_file, 'r') as ttf:
         for line in ttf:
             cols = line.split()
@@ -200,10 +200,10 @@ def ml_slr(root_path, meta_file):
             items.append([text, wav_file, speaker_name])
     return items
 
-def fm_slr(root_path, meta_file):
+def fem_slr(root_path, meta_file):
     txt_file=os.path.join(root_path, meta_file)
     items=[]
-    speaker_name="slr_fm"
+    speaker_name="fem_slr"
     with open(txt_file, 'r') as ttf:
         for line in ttf:
             cols=line.split()
