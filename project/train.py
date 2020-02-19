@@ -687,27 +687,27 @@ if __name__ == '__main__':
 
     # setup output paths and read configs
     c = load_config(args.config_path)
-    _ = os.path.dirname(os.path.realpath(__file__))
-    OUT_PATH = args.continue_path
-    if args.continue_path == '':
-        OUT_PATH = create_experiment_folder(c.output_path, c.run_name, args.debug)
+    #_ = os.path.dirname(os.path.realpath(__file__))
+    #OUT_PATH = args.continue_path
+    #if args.continue_path == '':
+    #    OUT_PATH = create_experiment_folder(c.output_path, c.run_name, args.debug)
 
-    AUDIO_PATH = os.path.join(OUT_PATH, 'test_audios')
+    #AUDIO_PATH = os.path.join(OUT_PATH, 'test_audios')
 
-    if args.rank == 0:
+    #if args.rank == 0:
         #os.makedirs(AUDIO_PATH, exist_ok=True)
-        new_fields = {}
-        if args.restore_path:
-            new_fields["restore_path"] = args.restore_path
-        new_fields["github_branch"] = get_git_branch()
-        copy_config_file(args.config_path,
-                         os.path.join(OUT_PATH, 'config.json'), new_fields)
+    #    new_fields = {}
+    #    if args.restore_path:
+    #        new_fields["restore_path"] = args.restore_path
+    #    new_fields["github_branch"] = get_git_branch()
+    #    copy_config_file(args.config_path,
+#                         os.path.join(OUT_PATH, 'config.json'), new_fields)
         #os.chmod(AUDIO_PATH, 0o775)
         #os.chmod(OUT_PATH, 0o775)
 
-    if args.rank == 0:
-        LOG_DIR = OUT_PATH
-        tb_logger = Logger(LOG_DIR)
+#    if args.rank == 0:
+#        LOG_DIR = OUT_PATH
+#        tb_logger = Logger(LOG_DIR)
 
     try:
         main(args)
@@ -718,6 +718,6 @@ if __name__ == '__main__':
         except SystemExit:
             os._exit(0)  # pylint: disable=protected-access
     except Exception:  # pylint: disable=broad-except
-        remove_experiment_folder(OUT_PATH)
+#        remove_experiment_folder(OUT_PATH)
         traceback.print_exc()
         sys.exit(1)
