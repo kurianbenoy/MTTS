@@ -131,3 +131,4 @@ tests/outputs/*
 TODO.txt
 .vscode/*
 data/*
+/data
