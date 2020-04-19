@@ -1,0 +1,13 @@
+{% block content %}
+<h1>Malayalam TTS</h1>
+<form action="" method="post" novalidate>
+    {{ form.hidden_tag() }}
+    <p>
+        {{ form.text.label }}<br>
+        {{ form.text(size=32) }}
+    </p>
+
+    <p>{{ form.agree() }} {{ form.agree.label }}</p>
+    <p>{{ form.submit() }}</p>
+</form>
+{% endblock %}

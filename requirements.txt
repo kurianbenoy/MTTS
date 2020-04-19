@@ -16,6 +16,7 @@ decorator==4.4.0
 defusedxml==0.6.0
 entrypoints==0.3
 Flask==1.1.1
+Flask-WTF==0.14.3
 idna==2.8
 ipykernel==5.1.1
 ipython==7.7.0
@@ -87,7 +88,7 @@ torchvision==0.5.0+cpu
 tornado==6.0.3
 tqdm==4.32.2
 traitlets==4.3.2
--e git+https://github.com/kurianbenoy/MTTS.git@d5240e91631b4502ea2e95ddad5fd717b2813a9c#egg=TTS&subdirectory=project
+-e git+https://github.com/kurianbenoy/MTTS.git@715a65f176c790e9c28a8e290964dde8076b1d3c#egg=TTS&subdirectory=project
 Unidecode==0.4.20
 uritemplate==3.0.1
 urllib3==1.24.3
@@ -95,4 +96,5 @@ wcwidth==0.1.7
 webencodings==0.5.1
 Werkzeug==0.16.1
 widgetsnbextension==3.5.1
+WTForms==2.2.1
 xgboost==0.90
