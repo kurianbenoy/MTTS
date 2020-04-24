@@ -1,36 +1,36 @@
 <head>
-<meta charset="utf-8">
-        <!-- add materialize css -->
-        <meta name="author" content="Kurian Benoy">
-        <title>Home</title>
-        <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
-        <link rel="stylesheet" href="{{ url_for('static', filename='css/materialize.css') }}">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-        <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-</head>
+    <meta charset="utf-8">
+            <!-- add materialize css -->
+            <meta name="author" content="Kurian Benoy">
+            <title>Home</title>
+            <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+            <link rel="stylesheet" href="{{ url_for('static', filename='css/materialize.css') }}">
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+            <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+          rel="stylesheet">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+    
+    
+    
+    <body>
+    {% block content %}
+    <h1>Malayalam TTS</h1>
+     <div class="#e0e0e0 grey lighten-2">
+              <div class="row justify-content-center centralize #006064 cyan darken-4 ">
+    <form action="" method="post" novalidate>
+        {{ form.hidden_tag() }}
+        <p>
+            {{ form.text.label }}<br>
+            {{ form.text(size=32) }}
+        </p>
+    
 
-
-
-<body>
-{% block content %}
-<h1>Malayalam TTS</h1>
- <div class="#e0e0e0 grey lighten-2">
-          <div class="row justify-content-center centralize #006064 cyan darken-4 ">
-<form action="" method="post" novalidate>
-    {{ form.hidden_tag() }}
-    <p>
-        {{ form.text.label }}<br>
-        {{ form.text(size=32) }}
-    </p>
-
-    <p>{{ form.agree() }} {{ form.agree.label }}</p>
-    <p>{{ form.submit() }}</p>
-</form>
+        <p>{{ form.submit() }}</p>
+    </form>
+              </div>
           </div>
-      </div>
-
-{% endblock %}
-
-</body>
+    
+    {% endblock %}
+    
+    </body>
