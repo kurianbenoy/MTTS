@@ -1,11 +1,30 @@
-from flask import render_template, redirect, request
+import sqlite3 as sql
+import os
+
+from flask import render_template, redirect, request, Response
 from app.forms import TextForm
 from app import app
-import os
+
+# Create a database https://flaskguide.readthedocs.io/en/latest/flask/flask2.html
+
+con = sql.connect('text.db')
+con.execute("CREATE TABLE IF NOT EXISTS textdbtable (ID INTEGER PRIMARY KEY AUTOINCREMENT, \
+   '+'text_input TEXT)")
+con.close
 
 @app.route('/text')
 def input():
     return render_template('output.html')
+
+@app.route('/downloadaudio')
+def raudio():
+    def generate():
+        with open("a.wav", "rb") as fwav:
+            data = fwav.read(1024)
+            while data:
+                yield data
+                data = fwav.read(1024)
+    return Response(generate(), mimetype="audio/x-wav")
 
 @app.route('/input', methods=['GET','POST'])
 def text_input():
