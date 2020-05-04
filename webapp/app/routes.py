@@ -19,7 +19,7 @@ def input():
 @app.route('/downloadaudio')
 def raudio():
     def generate():
-        with open("a.wav", "rb") as fwav:
+        with open("benoy.wav", "rb") as fwav:
             data = fwav.read(1024)
             while data:
                 yield data
@@ -33,6 +33,6 @@ def text_input():
         print("form correct")
         text = request.form['text']
         print(text)
-        os.system(f"espeak {text} -w a.wav")
-        return redirect("/text")
+        os.system(f"espeak-ng {text} -w benoy.wav")
+        return redirect("/downloadaudio")
     return render_template('input.html', form=form)
