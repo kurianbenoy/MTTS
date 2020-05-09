@@ -34,5 +34,5 @@ def text_input():
         text = request.form['text']
         print(text)
         os.system(f"espeak-ng {text} -w benoy.wav")
-        return redirect("/downloadaudio")
+        return render_template("output.html", text=text)
     return render_template('input.html', form=form)
