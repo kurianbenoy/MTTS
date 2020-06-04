@@ -1,3 +1,10 @@
+flite/build/
+flite/doc/ml
+flite/main/
+flite/tools/find_sts_main.o
+flite/tools/flite_sort_main.o
+flite/voices/
+
 project/fastai_audio
 /data/
 .env/
