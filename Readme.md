@@ -9,6 +9,6 @@ A detatiled Literature survey on Text to speech systems which was published in I
 
 - വണ്ടി ഇടുക്കി എത്തി
 - ഞാൻ ഇന്ന് ഒരു വണ്ടി കയറി
-aaLa@ukaL
-- അതിൽ നിറയെ ആളുകള് ഉണ്ടായിരുന്നു
+- അതിൽ നിറയെ ആളു‌കൾ ഉണ്ടായിരുന്നു
 
+Thanks to [Swanlekha Malayalam Input Tool](https://swanalekha.smc.org.in/#try-it-right-now)
