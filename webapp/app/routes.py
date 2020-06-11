@@ -1,7 +1,7 @@
 import sqlite3 as sql
 import os
 
-from flask import render_template, redirect, request, Response
+from flask import render_template, redirect, request, Response, url_for
 from app.forms import TextForm
 from app import app
 
