@@ -10,5 +10,9 @@ A detatiled Literature survey on Text to speech systems which was published in I
 - വണ്ടി ഇടുക്കി എത്തി
 - ഞാൻ ഇന്ന് ഒരു വണ്ടി കയറി
 - അതിൽ നിറയെ ആളു‌കൾ ഉണ്ടായിരുന്നു
+- കയ്യിൽ കാശുണ്ടോ?
+- ബുദ്ധിയാണ് സാറേ അവന്റെ മെയിൻ
+- അണ്ണാൻ മൂത്താലും മരം കേറ്റം മറക്കുമോ?
+- അണ്ണാൻ കുഞ്ഞും തന്നാലായത്.
 
 Thanks to [Swanlekha Malayalam Input Tool](https://swanalekha.smc.org.in/#try-it-right-now)
