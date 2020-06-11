@@ -12,13 +12,13 @@
     </head>
     
     
-    
-    <body>
+    <body background= "{{ url_for('static', filename='img/home.jpg') }}"  style="background-repeat: no-repeat; background-size: 100% 100%;">
     {% block content %}
-    <h1>Malayalam TTS</h1>
-     <div class="#e0e0e0 grey lighten-2">
-              <div class="row justify-content-center centralize #006064 cyan darken-4 ">
-    <form action="" method="post" novalidate>
+    <div>
+        <h1>Malayalam TEXT TO SPEECH SYSTEM</h1>
+       <div>
+            <div class="row justify-content-center centralize #006064 cyan darken-4 ">
+                <form action="" method="post" novalidate>
         {{ form.hidden_tag() }}
         <p>
             {{ form.text.label }}<br>
@@ -32,5 +32,5 @@
           </div>
     
     {% endblock %}
-    
+    </div>
     </body>

@@ -3,41 +3,18 @@ li {
 }
 
 body{
-	background-image:url('https://image.freepik.com/free-vector/abstract-background-with-a-watercolor-texture_1048-2144.jpg');
+	background: "url_for('static', filename='img/home.jpg')" ;
 }
 
 .centralize{
 	border-radius: 20px;
     width: 600px;
-    height: 300px;
+    height: 200px;
     top:0;
     bottom: 0;
     left: 30%;
     right: 0;
     margin: auto;
     box-shadow: 5px 5px 5px 5px;
-
-}
-
-.box{
-	position: absolute;
-	bottom: 20%;
-	left: 41%;
-	width: 18%;
-	height: 10%;
-	font-size: 3em;
-	background-color: yellow;
-	border: 5px solid green;
-	text-align: center;
-	box-shadow: 2px 2px 2px 2px black;
-
-}
-
-.falign{
-	width:900px;
-	height: 250px;
-	background-color: white;
-	font-size: 2em;
-	font-family: arial;
 
 }
