@@ -3,10 +3,7 @@ li {
 }
 
 body{
-	background-color: #848689;
-	background-repeat: no-repeat;
-	background-size: cover;
-
+	background-image:url('https://image.freepik.com/free-vector/abstract-background-with-a-watercolor-texture_1048-2144.jpg');
 }
 
 .centralize{
