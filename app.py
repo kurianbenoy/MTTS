@@ -8,9 +8,10 @@ def home():
 
 @app.route('/predict',methods=['POST'])
 def predict():
-    # if request.method == 'POST':
-    # 	message = request.form['message']
-    # 	data = [message]
+    if request.method == 'POST':
+        message = request.form['message']
+        print(message)
+        print(type(message))
     # 	vect = cv.transform(data).toarray()
     # 	my_prediction = classifier.predict(vect)
     return render_template('output.html')
