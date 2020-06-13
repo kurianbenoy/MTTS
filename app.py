@@ -14,7 +14,7 @@ def predict():
         print(message)
         print(type(message))
         Popen(["./flite/bin/flite", "-voice", "flite/voices/cmu_indic_kan_plv.flitevox", \
-             message, "-w", "op.wav"])
+             message,])
     # 	vect = cv.transform(data).toarray()
     # 	my_prediction = classifier.predict(vect)
     return render_template('output.html')
