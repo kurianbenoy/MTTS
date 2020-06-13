@@ -1,3 +1,4 @@
+from subprocess import Popen
 from flask import Flask, render_template, request
 
 app = Flask(__name__)
@@ -12,6 +13,8 @@ def predict():
         message = request.form['message']
         print(message)
         print(type(message))
+        Popen(["./flite/bin/flite", "-voice", "flite/voices/cmu_indic_kan_plv.flitevox", \
+             message, "-w", "op.wav"])
     # 	vect = cv.transform(data).toarray()
     # 	my_prediction = classifier.predict(vect)
     return render_template('output.html')
