@@ -14,5 +14,7 @@ A detatiled Literature survey on Text to speech systems which was published in I
 - ബുദ്ധിയാണ് സാറേ അവന്റെ മെയിൻ
 - അണ്ണാൻ മൂത്താലും മരം കേറ്റം മറക്കുമോ?
 - അണ്ണാൻ കുഞ്ഞും തന്നാലായത്.
+- ഇന്ത്യ എന്റെ രാജ്യമാണ്
+- കേരളം എന്റെ നാടാണ്
 
 Thanks to [Swanlekha Malayalam Input Tool](https://swanalekha.smc.org.in/#try-it-right-now)
