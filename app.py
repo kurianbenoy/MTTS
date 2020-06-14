@@ -17,7 +17,7 @@ def predict():
              message,])
     # 	vect = cv.transform(data).toarray()
     # 	my_prediction = classifier.predict(vect)
-    return render_template('output.html', message)
+    return render_template('output.html', message=message)
 
 
 if __name__ == "__main__":
