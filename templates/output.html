@@ -15,10 +15,10 @@
         <div class='description'>
             <p>A Web App, Built with Flask, Deployed using Heroku.</p>
         </div>
+
     </div class="results">
     <div class="#e0e0e0 grey lighten-2">
-    <h1> Audio output</h1>
-    {{message}}
+    <h1> Audio output for the message: <span class="safe">{{message}}</span></h1>
     <br>
     <audio src="{{url_for('static', filename='op.wav') }}" controls></audio>
     </div>
