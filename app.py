@@ -13,7 +13,8 @@ def predict():
         message = request.form['message']
         print(message)
         print(type(message))
-        Popen(["./flite/bin/flite", "-voice", "flite/voices/cmu_indic_tam_sdr.flitevox", \
+        # mar_aup, hin_aub, pan_amb
+        Popen(["./flite/bin/flite","--setf", "duration_stretch=1.1" , "-voice", "flite/voices/cmu_indic_tam_sdr.flitevox", \
              message,])
         Popen(["./flite/bin/flite", "-voice", "flite/voices/cmu_indic_tam_sdr.flitevox", \
              message, "-o", 'static/op.wav' ])
