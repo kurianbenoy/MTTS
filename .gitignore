@@ -125,9 +125,6 @@ venv.bak/
 *.swn
 *.swo
 
-# pytorch models
-*.pth.tar
-result/
 
 # setup.py
 version.py
@@ -138,6 +135,4 @@ core
 tests/outputs/*
 TODO.txt
 .vscode/*
-data/*
 /data
-/flite-master
