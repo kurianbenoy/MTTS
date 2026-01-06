@@ -11,4 +11,4 @@ scipy
 tqdm
 soundfile
 phonemizer
-bokeh==1.4.0
+bokeh==3.8.2
