@@ -102,7 +102,7 @@ setup(
         "flask",
         # "lws",
         "tqdm",
-        "bokeh==1.4.0",
+        "bokeh==3.8.2",
         "soundfile",
         "phonemizer @ https://github.com/bootphon/phonemizer/tarball/master",
     ],
